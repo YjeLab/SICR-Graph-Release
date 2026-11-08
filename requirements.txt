@@ -1,0 +1,18 @@
+# C3R-Graph server deployment requirements
+#
+# Recommended Python version:
+#   Python 3.10
+#
+# Recommended installation order on a CUDA server:
+#   1. Create a clean Python 3.10 environment
+#   2. Install this file: pip install -r requirements.txt
+#
+# Notes:
+# - We pin NumPy to the 1.x series to avoid binary compatibility issues.
+# - The current project defaults to the stable native rspmm backend,
+#   so no extra mamba_ssm / triton / causal-conv1d dependencies are needed.
+
+numpy==1.26.4
+torch==2.1.1
+tqdm==4.67.1
+setuptools==68.2.2
